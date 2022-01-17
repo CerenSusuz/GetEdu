@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Entities\Concrete\" />
+    <Folder Include="Entities\DTOs\BaseDto\" />
+    <Folder Include="Entities\DTOs\BaseListDto\" />
+  </ItemGroup>
+
 </Project>

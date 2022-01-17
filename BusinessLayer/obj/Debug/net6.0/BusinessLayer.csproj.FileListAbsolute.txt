@@ -1,0 +1,12 @@
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\bin\Debug\net6.0\ref\BusinessLayer.dll
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\Users\c.susuz\source\repos\getedu\GetEdu\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
