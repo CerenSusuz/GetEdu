@@ -215,6 +215,19 @@
         "runtime": {
           "bin/placeholder/BaseCore.dll": {}
         }
+      },
+      "EntityLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BaseCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntityLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntityLayer.dll": {}
+        }
       }
     }
   },
@@ -575,12 +588,18 @@
       "type": "project",
       "path": "../BaseCore/BaseCore.csproj",
       "msbuildProject": "../BaseCore/BaseCore.csproj"
+    },
+    "EntityLayer/1.0.0": {
+      "type": "project",
+      "path": "../EntityLayer/EntityLayer.csproj",
+      "msbuildProject": "../EntityLayer/EntityLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "BaseCore >= 1.0.0",
       "EntityFramework >= 6.2.0",
+      "EntityLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.1"
     ]
   },
@@ -618,6 +637,9 @@
           "projectReferences": {
             "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\BaseCore\\BaseCore.csproj": {
               "projectPath": "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\BaseCore\\BaseCore.csproj"
+            },
+            "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }

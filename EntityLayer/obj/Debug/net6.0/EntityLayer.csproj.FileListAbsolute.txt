@@ -1,0 +1,5 @@
+C:\Users\c.susuz\source\repos\getedu\GetEdu\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\c.susuz\source\repos\getedu\GetEdu\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\c.susuz\source\repos\getedu\GetEdu\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\c.susuz\source\repos\getedu\GetEdu\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\c.susuz\source\repos\getedu\GetEdu\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
