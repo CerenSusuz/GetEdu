@@ -33,7 +33,7 @@ namespace DataAccessLayer.Contexts.EF
         public DbSet<SocialMediaAccount> SocialMediaAccounts { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<UserImagePairing> UserImagePairings { get; set; }
-        public DbSet<UserSocialMediaAccountPairing> UserSocialMediaAccountPairings { get; set; }
+        public DbSet<UserSocialMediaAccountPairing> UserSocialMediaAccountPairings { get; set; } 
 
 
 
