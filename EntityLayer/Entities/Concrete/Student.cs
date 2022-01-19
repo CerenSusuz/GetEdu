@@ -11,5 +11,9 @@ namespace EntityLayer.Entities.Concrete
     {
         public int StudentId { get; set; }
 
+        public int ImageId { get; set; }
+        public Image Image { get; set; }
+        public ICollection<Message> Messages { get; set; }
+
     }
 }

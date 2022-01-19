@@ -1,4 +1,5 @@
 ﻿using BaseCore.Entities.Abstract;
+using BaseCore.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,8 @@ namespace EntityLayer.Entities.Concrete
         public DateTime? UpdatedAt { get; set; }
         public string Name { get; set; }
         public string Url { get; set; }
+
+        public int InstructorId { get; set; }
+        public Instructor Instructor { get; set; }
     }
 }

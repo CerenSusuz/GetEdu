@@ -13,5 +13,11 @@ namespace EntityLayer.Entities.Concrete
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public string Title { get; set; }
+
+
+        public int ContentId { get; set; }
+        public Content Content { get; set; }
+        //one section many lectures
+        public ICollection<Lecture> Lectures { get; set; }
     }
 }
