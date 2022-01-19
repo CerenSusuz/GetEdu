@@ -34,11 +34,11 @@ namespace DataAccessLayer.Extensions
                         property.SetMaxLength(61);
                         break;
 
-                        //TODO:ef6
-                    //case "CreatedAt":
-                    //case "UpdatedAt":
-                    //    property.HasDefaultValueSql("getdate()");
-                    //    break;
+                    //TODO:ef6
+                    case "CreatedAt":
+                    case "UpdatedAt":
+                        property.SetDefaultValue("getdate()");
+                        break;
 
                     case "Email":
                         property.SetMaxLength(75);

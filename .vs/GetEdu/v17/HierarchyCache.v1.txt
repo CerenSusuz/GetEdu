@@ -1,0 +1,351 @@
+﻿++Solution 'GetEdu' ‎(5 of 5 projects)
+i:{00000000-0000-0000-0000-000000000000}:GetEdu.sln
+++EntityLayer
+i:{00000000-0000-0000-0000-000000000000}:EntityLayer
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\bin\debug\net6.0\entitylayer.dll
+++Dependencies
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:>440
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:>441
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:>443
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:>442
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:>556
+++Analyzers
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:analyzers
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:analyzers
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:analyzers
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:analyzers
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:analyzers
+++Frameworks
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:frameworks
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:frameworks
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:frameworks
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:frameworks
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:frameworks
+++Projects
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:projects
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:projects
+++Entities
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\entities\
+++Concrete
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\concrete\
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\entities\concrete\
+++DTOs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\dtos\
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\microsoft.netcore.app
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\microsoft.netcore.app
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\dataaccesslayer\microsoft.netcore.app
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\microsoft.netcore.app
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\users\c.susuz\source\repos\getedu\getedu\api\microsoft.netcore.app
+++BaseCore
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\bin\debug\net6.0\basecore.dll
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\bin\debug\net6.0\basecore.dll
+i:{00000000-0000-0000-0000-000000000000}:BaseCore
+++Content.cs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\content.cs
+++ContentSectionPairing.cs
+++Course.cs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\course.cs
+++CourseImagePairing.cs
+++CourseStudentPairing.cs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\coursestudentpairing.cs
+++Image.cs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\image.cs
+++Instructor.cs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\instructor.cs
+++Lecture.cs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\lecture.cs
+++Message.cs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\message.cs
+++Section.cs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\section.cs
+++SectionLecturePairing.cs
+++SocialMediaAccount.cs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\socialmediaaccount.cs
+++Student.cs
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\concrete\student.cs
+++UserImagePairing.cs
+++UserSocialMediaAccountPairing.cs
+++BaseDto
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\dtos\basedto\
+++BaseListDto
+i:{7567a7c3-398d-452d-a7db-acbfb4300b02}:c:\users\c.susuz\source\repos\getedu\getedu\entitylayer\entities\dtos\baselistdto\
+++BusinessLayer
+i:{00000000-0000-0000-0000-000000000000}:BusinessLayer
+++Abstract
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\abstract\
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\entities\abstract\
+++Installers
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\installers\
+++Repositories
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\repositories\
+++ValidationRules
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\validationrules\
+++Packages
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:packages
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:packages
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:packages
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:packages
+++Profiles
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\installers\profiles\
+++IServiceRepository.cs
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\repositories\iservicerepository.cs
+++ServiceRepository.cs
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\repositories\servicerepository.cs
+++FluentValidation
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\validationrules\fluentvalidation\
+++Autofac (6.3.0)
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:>566
+++AutoMapperProfiles.cs
+i:{688c23ec-b38a-4834-8391-91355bb93d2e}:c:\users\c.susuz\source\repos\getedu\getedu\businesslayer\installers\profiles\automapperprofiles.cs
+++DataAccessLayer
+i:{00000000-0000-0000-0000-000000000000}:DataAccessLayer
+++Contexts
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\dataaccesslayer\contexts\
+++EF
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\dataaccesslayer\contexts\ef\
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\dataaccesslayer\mapping\ef\
+++GetEduContext.cs
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\dataaccesslayer\contexts\ef\geteducontext.cs
+++Extensions
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\dataaccesslayer\extensions\
+++ModelBuilderExtension.cs
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\dataaccesslayer\extensions\modelbuilderextension.cs
+++Mapping
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\dataaccesslayer\mapping\
+++EntityFramework (6.2.0)
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:>577
+++Microsoft.EntityFrameworkCore (6.0.1)
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:>576
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:>617
+++BusinessAspect
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\businessaspect\
+++Constants
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\constants\
+++DataAccess
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\dataaccess\
+++DependencyResolvers
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\dependencyresolvers\
+++SecuredOperation.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\businessaspect\securedoperation.cs
+++Messages.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\constants\messages.cs
+++EntityFramework
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\dataaccess\entityframework\
+++IEntityRepository.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\dataaccess\ientityrepository.cs
+++Autofac
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\dependencyresolvers\autofac\
+++EFEntityRepositoryBase.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\dataaccess\entityframework\efentityrepositorybase.cs
+++AutofacBusinessModule.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\dependencyresolvers\autofac\autofacbusinessmodule.cs
+++IDto.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\entities\abstract\idto.cs
+++IEntity.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\entities\abstract\ientity.cs
+++IListDto.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\entities\abstract\ilistdto.cs
+++OperationClaim.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\entities\concrete\operationclaim.cs
+++User.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\entities\concrete\user.cs
+++UserOperationClaimPairing.cs
+i:{e80c388e-c3cc-4c04-9f56-b6585a167a2e}:c:\users\c.susuz\source\repos\getedu\getedu\basecore\entities\concrete\useroperationclaimpairing.cs
+++API
+i:{00000000-0000-0000-0000-000000000000}:API
+++Connected Services 
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:>557
+++Properties
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\users\c.susuz\source\repos\getedu\getedu\api\properties\
+++Controllers
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\users\c.susuz\source\repos\getedu\getedu\api\controllers\
+++appsettings.json
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\users\c.susuz\source\repos\getedu\getedu\api\appsettings.json
+++Program.cs
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\users\c.susuz\source\repos\getedu\getedu\api\program.cs
+++WeatherForecast.cs
+++No service dependencies discovered
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:>558
+++launchSettings.json
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\users\c.susuz\source\repos\getedu\getedu\api\properties\launchsettings.json
+++WeatherForecastController.cs
+++appsettings.Development.json
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\users\c.susuz\source\repos\getedu\getedu\api\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:c:\users\c.susuz\source\repos\getedu\getedu\api\microsoft.aspnetcore.app
+++Swashbuckle.AspNetCore (6.2.3)
+i:{39ec3962-760b-445b-bb67-d84e60bb1221}:>607
+++bin
+++Debug
+++Release
+++net6.0
+++ref
+++obj
+++DataAccessLayer.csproj.nuget.dgspec.json
+++DataAccessLayer.csproj.nuget.g.props
+++DataAccessLayer.csproj.nuget.g.targets
+++project.assets.json
+++project.nuget.cache
+++.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+++DataAccessLayer.AssemblyInfo.cs
+++DataAccessLayer.AssemblyInfoInputs.cache
+++DataAccessLayer.assets.cache
+++DataAccessLayer.csproj.AssemblyReference.cache
+++DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+++DataAccessLayer.GlobalUsings.g.cs
+++Imports
+++Sdk.props
+++Sdk.targets
+++Microsoft.Common.props
+++Microsoft.NET.Sdk.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+++Microsoft.CSharp.targets
+++Microsoft.NET.Sdk.targets
+++Microsoft.NET.Compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+++Microsoft.NuGet.ImportBefore.props
+++NuGet.props
+++Microsoft.NET.Sdk.DefaultItems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+++Microsoft.NET.SupportedPlatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+++Microsoft.NET.ILLink.props
+++Microsoft.NET.Compatibility.props
+++Microsoft.NET.PackTool.props
+++Microsoft.NET.PackProjectTool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+++Microsoft.NET.Windows.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+++Microsoft.Managed.Before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+++Microsoft.Managed.After.targets
+++Microsoft.NET.Sdk.Common.targets
+++Microsoft.PackageDependencyResolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+++Microsoft.NET.DesignerSupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+++Microsoft.NET.ComposeStore.targets
+++Microsoft.NET.CrossGen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+++Microsoft.NET.Publish.targets
+++Microsoft.NET.PackTool.targets
+++Microsoft.NET.PackProjectTool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+++Microsoft.NET.ConflictResolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+++Microsoft.NET.ILLink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+++Microsoft.NET.Compatibility.Common.targets
+++Microsoft.NuGet.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain)
+++Microsoft.CSharp.Core.targets
+++Microsoft.CSharp.DesignTime.targets
+++Microsoft.Common.targets
+++Microsoft.ServiceModel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+++Microsoft.NET.ILLink.Tasks.props
+++System.Windows.Forms.Analyzers.props
+++Microsoft.Managed.Core.targets
+++Microsoft.Managed.DesignTime.targets
+++Microsoft.Common.CurrentVersion.targets
+++Microsoft.Managed.Core.CurrentVersions.targets
+++Microsoft.Cpp.VCLibs120Universal.targets
+++Microsoft.Net.CoreRuntime.ImportBefore.targets
+++Microsoft.NetNative.ImportBefore.targets
+++Microsoft.NET.props
+++Microsoft.CodeAnalysis.targets
+++Microsoft.Xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+++Microsoft.TeamTest.targets
+++NuGet.targets
+++Microsoft.DesktopBridge.ImportAfter.targets
+++Microsoft.Docker.ImportAfter.targets
+++Microsoft.NET.Build.Extensions.targets
+++Microsoft.Net.CoreRuntime.ImportAfter.targets
+++Microsoft.NetNative.ImportAfter.targets
+++Microsoft.NuGet.ImportAfter.targets
+++Microsoft.VisualStudio.Azure.Fabric.ServiceProject.ImportAfter.targets
+++Microsoft.Web.ImportAfter.targets
+++Microsoft.DesktopBridge.Common.targets
+++Microsoft.Docker.targets
+++Microsoft.VisualStudio.Azure.Fabric.ServiceProject.targets
+++System.Data.SqlClient (4.8.3)
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:>729
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.1)
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:>730
+++ContentMap.cs
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\dataaccesslayer\mapping\contentmap.cs
+++CourseMap.cs
+i:{4ab4ebd7-c9b2-4b29-b93e-8f831702e434}:c:\users\c.susuz\source\repos\getedu\getedu\dataaccesslayer\mapping\coursemap.cs
