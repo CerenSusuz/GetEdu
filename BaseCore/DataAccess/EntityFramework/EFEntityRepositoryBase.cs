@@ -13,6 +13,23 @@ namespace BaseCore.DataAccess.EntityFramework
         where TEntity : class, IEntity, new()
         where TContext : DbContext, new()
     {
+        public IQueryable<TEntity> Table()
+        {
+            using(TContext context = new TContext())
+            {
+                return context.Set<TEntity>();
+            }
+        }
+
+
+        public IQueryable<TEntity> AsNoTracking()
+        {
+            using (TContext context = new TContext())
+            {
+               var entities =  context.Set<TEntity>();
+                return entities.AsNoTracking();
+            }
+        }
 
         public async Task DeleteAsync(TEntity entity)
         {

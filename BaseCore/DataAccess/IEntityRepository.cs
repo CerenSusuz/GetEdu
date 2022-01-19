@@ -11,6 +11,15 @@ namespace BaseCore.DataAccess.EntityFramework
     public interface IEntityRepository<TEntity>
         where TEntity:class, IEntity,new()
     {
+        /// <summary>
+        ///   ToTable
+        /// </summary>
+        IQueryable<TEntity> Table();
+
+        /// <summary>
+        /// To Table as No Tracking
+        /// </summary>
+        IQueryable<TEntity> AsNoTracking();
 
         /// <summary>
         /// Gets the entity that is meets the given filter.

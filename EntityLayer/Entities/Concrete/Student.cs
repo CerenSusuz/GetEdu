@@ -7,13 +7,9 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Entities.Concrete
 {
-    public class Student : User
+    public class Student : Account
     {
         public int StudentId { get; set; }
-
-        public int ImageId { get; set; }
-        public Image Image { get; set; }
-        public ICollection<Message> Messages { get; set; }
 
     }
 }

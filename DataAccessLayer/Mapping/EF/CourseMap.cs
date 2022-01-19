@@ -16,7 +16,11 @@ namespace DataAccessLayer.Mapping
             builder.ToTable("Courses");
             builder.Property(c=>c.Title).IsRequired().HasMaxLength(50);
             builder.Property(c=>c.Description).IsRequired().HasMaxLength(256);
-            builder.Property(p => p.Price).IsRequired();
+            builder.Property(c => c.Price).IsRequired();
+            builder.HasOne(c => c.Instructor)
+                .WithMany(x => x.Courses)
+                .HasForeignKey(x => x.InstructorId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
