@@ -19,5 +19,7 @@ namespace EntityLayer.Entities.Concrete
         //one lecture has one image
         public int ImageId { get; set; }
         public Image Image { get; set; }
+        public int SectionId { get; set; }
+        public Section Section { get; set; }
     }
 }
