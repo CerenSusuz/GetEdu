@@ -9,9 +9,9 @@ A platform where you can get training in many areas.
 
 * [C#](https://www.w3schools.com/cs/) 
 * [ASP.NET](https://www.w3schools.com/asp/webpages_intro.asp) 
-* [.NET CORE](https://dotnet.microsoft.com/download) 
+* [NET6 ](https://dotnet.microsoft.com/download) 
 * [SQL SERVER](https://www.microsoft.com/tr-tr/sql-server/sql-server-downloads)
-* [Entity Framework](https://www.entityframeworktutorial.net/)
+* [Entity Framework 6](https://www.entityframeworktutorial.net/)
 * [AOP(Aspect Oriented Programming)](https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/february/aspect-oriented-programming-aspect-oriented-programming-with-the-realproxy-class)
 * [JWT(JSON Web Tokens)](https://jwt.io/)
 
