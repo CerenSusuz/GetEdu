@@ -1,29 +1,20 @@
-# README #
+# GetEdu | 
+Integrated Development Environment : Visual Studio 2022 
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## About The Project
 
-### What is this repository for? ###
+A platform where you can get training in many areas.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+## Built With
 
-### How do I get set up? ###
+* [C#](https://www.w3schools.com/cs/) 
+* [ASP.NET](https://www.w3schools.com/asp/webpages_intro.asp) 
+* [.NET CORE](https://dotnet.microsoft.com/download) 
+* [SQL SERVER](https://www.microsoft.com/tr-tr/sql-server/sql-server-downloads)
+* [Entity Framework](https://www.entityframeworktutorial.net/)
+* [AOP(Aspect Oriented Programming)](https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/february/aspect-oriented-programming-aspect-oriented-programming-with-the-realproxy-class)
+* [JWT(JSON Web Tokens)](https://jwt.io/)
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+## 📫 How to Reach Me
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+[![Linkedin Badge](https://img.shields.io/badge/cerensusuz-follow%20on%20linkedin-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ceren-s-2a70841b3/)
