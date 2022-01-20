@@ -8,7 +8,6 @@ namespace DataAccessLayer.Mapping
     {
         public void Configure(EntityTypeBuilder<SocialMediaAccount> builder)
         {
-            builder.ToTable("SocialMediaAccounts");
             builder.HasIndex(media => media.Url).IsUnique();
             builder.HasIndex(media => media.InstructorId).IsUnique(); 
             builder.Property(media => media.Url).IsRequired().HasMaxLength(50);

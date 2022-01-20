@@ -8,7 +8,6 @@ namespace DataAccessLayer.Mapping
     {
         public void Configure(EntityTypeBuilder<Section> builder)
         {
-            builder.ToTable("Sections");
             builder.Property(sec => sec.Title).IsRequired().HasMaxLength(50);
             builder.Property(sec => sec.ContentId).IsRequired();
             builder.HasOne(sec => sec.Content)

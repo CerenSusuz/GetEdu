@@ -1,16 +1,14 @@
 ﻿using BaseCore.Entities.Abstract;
-using BaseCore.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityLayer.Entities.Concrete
+namespace EntityLayer.Entities.DTOs.BaseDto
 {
-    public  class CourseStudentPairing : BaseEntity
+    public class CourseStudentPairingDto : IDto
     {
-        //many courses <-> many students
         public int CourseId { get; set; }
         public int StudentId { get; set; }
     }

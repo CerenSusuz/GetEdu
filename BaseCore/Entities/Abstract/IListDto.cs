@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace BaseCore.Entities.Abstract
 {
+    /// <summary>
+    /// models for using getall methods
+    /// </summary>
     public interface IListDto
     {
     }

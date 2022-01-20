@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\DTOs\BaseDto\" />
-    <Folder Include="Entities\DTOs\BaseListDto\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BaseCore\BaseCore.csproj" />
   </ItemGroup>
 

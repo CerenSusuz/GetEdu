@@ -13,7 +13,6 @@ namespace DataAccessLayer.Mapping
     {
         public void Configure(EntityTypeBuilder<Content> builder)
         {
-            builder.ToTable("Contents");
         }
     }
 }

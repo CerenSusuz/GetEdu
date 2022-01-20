@@ -13,7 +13,6 @@ namespace DataAccessLayer.Mapping
     {
         public void Configure(EntityTypeBuilder<Instructor> builder)
         {
-            builder.ToTable("Instructors");
             builder.Property(ins => ins.Title).IsRequired().HasMaxLength(50);
             builder.Property(ins => ins.Description).IsRequired().HasMaxLength(125);
             builder.Property(ins => ins.CurriculumVitae).IsRequired().HasMaxLength(256);

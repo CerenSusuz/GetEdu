@@ -8,15 +8,8 @@ namespace DataAccessLayer.Mapping
     {
         public void Configure(EntityTypeBuilder<Account> builder)
         {
-            builder.ToTable("Accounts");
-            builder.HasIndex(acc => acc.Email).IsUnique();
-            builder.HasData(new Account
-            {
-                Id = 1,
-                FirstName = "Admin",
-                LastName = "User",
-                Email = "admin@cerensusuz.com",
-            });
+            builder.HasIndex(acc => acc.UserId).IsUnique();
+            builder.Property(acc => acc.UserId).IsRequired();
         }
     }
 }

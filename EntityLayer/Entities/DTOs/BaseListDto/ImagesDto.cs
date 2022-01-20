@@ -1,16 +1,15 @@
 ﻿using BaseCore.Entities.Abstract;
-using BaseCore.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityLayer.Entities.Concrete
+namespace EntityLayer.Entities.DTOs.BaseListDto
 {
-    public class Image : BaseEntity
+    public class ImagesDto : IListDto
     {
+        public int Id { get; set; }
         public string Path { get; set; }
-
     }
 }

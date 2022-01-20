@@ -43,7 +43,6 @@ namespace DataAccessLayer.Contexts.EF
         public DbSet<Image> Images { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Lecture> Lectures { get; set; }
-        public DbSet<Message> Messages { get; set; }
         public DbSet<Section> Sections { get; set; }
         public DbSet<SocialMediaAccount> SocialMediaAccounts { get; set; }
         public DbSet<Student> Students { get; set; }
