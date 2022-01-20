@@ -14,6 +14,7 @@ A platform where you can get training in many areas.
 * [Entity Framework 6](https://www.entityframeworktutorial.net/)
 * [AOP(Aspect Oriented Programming)](https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/february/aspect-oriented-programming-aspect-oriented-programming-with-the-realproxy-class)
 * [JWT(JSON Web Tokens)](https://jwt.io/)
+* [AutoMapper](https://dev.to/moe23/add-automapper-to-net-6-3fdn)
 
 ## 📫 How to Reach Me
 
