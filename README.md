@@ -12,6 +12,7 @@ A platform where you can get training in many areas.
 * [NET6 ](https://dotnet.microsoft.com/download) 
 * [SQL SERVER](https://www.microsoft.com/tr-tr/sql-server/sql-server-downloads)
 * [Entity Framework 6](https://www.entityframeworktutorial.net/)
+* [DotNet Tool](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli)
 * [AOP(Aspect Oriented Programming)](https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/february/aspect-oriented-programming-aspect-oriented-programming-with-the-realproxy-class)
 * [JWT(JSON Web Tokens)](https://jwt.io/)
 * [AutoMapper](https://dev.to/moe23/add-automapper-to-net-6-3fdn)
