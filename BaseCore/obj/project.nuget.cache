@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "18ANfEaoQNHlhBMz+elOCv3GN+P5mHyKo/Z1A3PfgMyo9bqh6HgTh5rlPNlaLw7+71umjhXSAzO9wZo54COzGQ==",
+  "dgSpecHash": "JIM1FrlF51c3GNuDYOPSyxqMOd6aGUyT8LYApj75jsCsyZIrXDuqOhWr1qJ9B2yEfZm6rw2zdMmv3dq98JX94w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\BaseCore\\BaseCore.csproj",
+  "projectFilePath": "C:\\Users\\c.susuz\\Desktop\\GetEdu\\BaseCore\\BaseCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\c.susuz\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\c.susuz\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.1\\microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",

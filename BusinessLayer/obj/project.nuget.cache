@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w2vdMySC5b+epU08nvNazfX2xhPkq/AUtVau3CrVHiyemqFWb/fBx5rQ1t47PEeo5CN/fy9VnlFjOBWH8eDdhA==",
+  "dgSpecHash": "Y+OSnZZfPvcf7XT0exvriXx0iqDvXe0PvM0p1sPH1vNQOqILgj8UsHk2CmMFR8nftSZyNkAY0mqMHEfxHObTqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\c.susuz\\Desktop\\GetEdu\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\c.susuz\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\c.susuz\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
