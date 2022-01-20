@@ -13,5 +13,8 @@ namespace EntityLayer.Entities.Concrete
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public DateTime TotalLength { get; set; }
+
+        //one content has many sections
+        public ICollection<Section> Sections { get; set; }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Entities.Concrete
 {
-    public class Student : User
+    public class Student : Account
     {
         public int StudentId { get; set; }
 

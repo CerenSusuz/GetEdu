@@ -7,11 +7,17 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Entities.Concrete
 {
-    public class Instructor : User
+    public class Instructor : Account
     {
         public int InstructorId { get; set; }
         public string Title { get; set; }
+        public string Description { get; set; }
         public string CurriculumVitae { get; set; }
         public string WebSite { get; set; }
+
+        //one instructor has many courses
+        public ICollection<Course> Courses { get; set; }
+
+        public ICollection<SocialMediaAccount> SocialMediaAccounts { get; set; }
     }
 }

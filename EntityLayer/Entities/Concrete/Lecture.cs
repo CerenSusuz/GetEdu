@@ -16,6 +16,10 @@ namespace EntityLayer.Entities.Concrete
         public string? Preview { get; set; }
         public DateTime Duration { get; set; }
 
+        //one lecture has one image
         public int ImageId { get; set; }
+        public Image Image { get; set; }
+        public int SectionId { get; set; }
+        public Section Section { get; set; }
     }
 }

@@ -17,6 +17,10 @@ namespace EntityLayer.Entities.Concrete
         public decimal Rate { get; set; }
         public decimal Price { get; set; }
 
+        //one course -> one instructor and image
         public int InstructorId { get; set; }
+        public Instructor Instructor { get; set; }
+        public int ImageId { get; set; }
+        public Image Image { get; set; }
     }
 }
