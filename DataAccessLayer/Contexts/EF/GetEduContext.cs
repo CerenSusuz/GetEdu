@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Data.Entity.Infrastructure;
-using System.Data.Entity.Core.Objects;
 using System.Linq;
 using BaseCore.Entities.Concrete;
 using EntityLayer.Entities.Concrete;
@@ -25,7 +23,7 @@ namespace DataAccessLayer.Contexts.EF
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer("Source=(localdb)/ProjectModels;Database=GetEduDb;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=GetEduDb;Trusted_Connection=true;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

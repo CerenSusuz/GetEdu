@@ -19,7 +19,7 @@ namespace DataAccessLayer.Mapping
             builder.HasOne(c => c.Instructor)
                 .WithMany(x => x.Courses)
                 .HasForeignKey(x => x.InstructorId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

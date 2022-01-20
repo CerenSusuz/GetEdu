@@ -17,9 +17,6 @@ namespace DataAccessLayer.Mapping
             builder.Property(ins => ins.Description).IsRequired().HasMaxLength(125);
             builder.Property(ins => ins.CurriculumVitae).IsRequired().HasMaxLength(256);
             builder.HasIndex(ins => ins.WebSite).IsUnique();
-            builder.HasIndex(stu => stu.InstructorId).IsUnique();
-            builder.HasIndex(stu => stu.Email).IsUnique();
-            builder.HasIndex(stu => stu.ImageId).IsUnique();
         }
     }
 }

@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseCore", "BaseCore\BaseCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{7567A7C3-398D-452D-A7DB-ACBFB4300B02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{39EC3962-760B-445B-BB67-D84E60BB1221}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{39EC3962-760B-445B-BB67-D84E60BB1221}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

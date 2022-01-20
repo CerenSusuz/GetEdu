@@ -10,3 +10,15 @@ C:\Users\c.susuz\source\repos\getedu\GetEdu\BaseCore\obj\Debug\net6.0\BaseCore.c
 C:\Users\c.susuz\source\repos\getedu\GetEdu\BaseCore\obj\Debug\net6.0\BaseCore.dll
 C:\Users\c.susuz\source\repos\getedu\GetEdu\BaseCore\obj\Debug\net6.0\ref\BaseCore.dll
 C:\Users\c.susuz\source\repos\getedu\GetEdu\BaseCore\obj\Debug\net6.0\BaseCore.pdb
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\obj\Debug\net6.0\BaseCore.csproj.AssemblyReference.cache
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\obj\Debug\net6.0\BaseCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\obj\Debug\net6.0\BaseCore.AssemblyInfoInputs.cache
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\obj\Debug\net6.0\BaseCore.AssemblyInfo.cs
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\obj\Debug\net6.0\BaseCore.csproj.CoreCompileInputs.cache
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\obj\Debug\net6.0\BaseCore.dll
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\obj\Debug\net6.0\ref\BaseCore.dll
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\obj\Debug\net6.0\BaseCore.pdb
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\bin\Debug\net6.0\BaseCore.deps.json
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\bin\Debug\net6.0\BaseCore.dll
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\bin\Debug\net6.0\ref\BaseCore.dll
+C:\Users\c.susuz\Desktop\GetEdu\BaseCore\bin\Debug\net6.0\BaseCore.pdb

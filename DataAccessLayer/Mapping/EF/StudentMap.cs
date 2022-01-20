@@ -8,9 +8,6 @@ namespace DataAccessLayer.Mapping
     {
         public void Configure(EntityTypeBuilder<Student> builder)
         {
-            builder.HasIndex(stu => stu.StudentId).IsUnique();
-            builder.HasIndex(stu => stu.Email).IsUnique();
-            builder.HasIndex(stu => stu.ImageId).IsUnique();
         }
     }
 }

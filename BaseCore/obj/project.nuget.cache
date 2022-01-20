@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "dgSpecHash": "tu1tAKHlC+yGoXQKH6EJen0V/lw4ijMxA6A7UbMVKvC77br4pzScA0h3eqQez4zgAwuGubcDOqsOctfSrpEBXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\c.susuz\\Desktop\\GetEdu\\BaseCore\\BaseCore.csproj",
   "expectedPackageFiles": [
@@ -35,6 +36,12 @@
     "C:\\Users\\c.susuz\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\c.susuz\\Desktop\\GetEdu\\BaseCore\\obj\\project.nuget.cache : Value cannot be null.\r\nParameter name: value"
+    },
     {
       "code": "NU1701",
       "level": "Warning",

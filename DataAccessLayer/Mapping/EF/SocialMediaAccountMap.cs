@@ -14,7 +14,7 @@ namespace DataAccessLayer.Mapping
             builder.HasOne(media => media.Instructor)
                 .WithMany(x => x.SocialMediaAccounts)
                 .HasForeignKey(x => x.InstructorId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
