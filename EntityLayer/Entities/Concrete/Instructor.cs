@@ -15,7 +15,7 @@ namespace EntityLayer.Entities.Concrete
         public string WebSite { get; set; }
 
         public int AccountId { get; set; }
-        public Account Account { get; set; }
+        public virtual Account Account { get; set; }
         //one instructor has many courses
         public ICollection<Course> Courses { get; set; }
         public ICollection<SocialMediaAccount> SocialMediaAccounts { get; set; }
