@@ -1,8 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "b/BMmRElxqH3iwPjCwPj0nNQiYKPFK4a8y7z9QT1Cp7UcdjFRESbEtF/p1Qz576UsMHSCK26XYOdaov0FBZrbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\BaseCore\\BaseCore.csproj",
+  "projectFilePath": "C:\\Users\\c.susuz\\Desktop\\GetEdu\\BaseCore\\BaseCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\c.susuz\\.nuget\\packages\\castle.core\\1.2.0\\castle.core.1.2.0.nupkg.sha512",
     "C:\\Users\\c.susuz\\.nuget\\packages\\castle.dynamicproxy\\2.2.0\\castle.dynamicproxy.2.2.0.nupkg.sha512",

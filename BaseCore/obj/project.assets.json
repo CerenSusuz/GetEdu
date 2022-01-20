@@ -1104,11 +1104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\BaseCore\\BaseCore.csproj",
+      "projectUniqueName": "C:\\Users\\c.susuz\\Desktop\\GetEdu\\BaseCore\\BaseCore.csproj",
       "projectName": "BaseCore",
-      "projectPath": "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\BaseCore\\BaseCore.csproj",
+      "projectPath": "C:\\Users\\c.susuz\\Desktop\\GetEdu\\BaseCore\\BaseCore.csproj",
       "packagesPath": "C:\\Users\\c.susuz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\BaseCore\\obj\\",
+      "outputPath": "C:\\Users\\c.susuz\\Desktop\\GetEdu\\BaseCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1190,6 +1190,12 @@
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\c.susuz\\Desktop\\GetEdu\\BaseCore\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

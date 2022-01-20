@@ -13,7 +13,6 @@ namespace DataAccessLayer.Mapping
     {
         public void Configure(EntityTypeBuilder<Lecture> builder)
         {
-            builder.ToTable("Lectures");
             builder.Property(ins => ins.Title).IsRequired().HasMaxLength(50);
             builder.Property(ins => ins.Preview).IsRequired().HasMaxLength(100);
             builder.HasIndex(ins => ins.ImageId).IsUnique();

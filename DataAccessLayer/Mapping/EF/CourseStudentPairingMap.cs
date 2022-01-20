@@ -13,7 +13,6 @@ namespace DataAccessLayer.Mapping
     {
         public void Configure(EntityTypeBuilder<CourseStudentPairing> builder)
         {
-            builder.ToTable("CourseStudentPairings");
             builder.HasIndex(cs => new { cs.CourseId, cs.StudentId }).IsUnique();
         }
     }

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace BaseCore.Entities.Abstract
 {
+    /// <summary>
+    /// models for using create/update/delete
+    /// </summary>
     public interface IDto
     {
     }

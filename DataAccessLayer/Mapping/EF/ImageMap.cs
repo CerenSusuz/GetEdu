@@ -13,7 +13,6 @@ namespace DataAccessLayer.Mapping.EF
     {
         public void Configure(EntityTypeBuilder<Image> builder)
         {
-            builder.ToTable("Images");
             builder.HasIndex(img=>img.Path).IsUnique();
         }
     }

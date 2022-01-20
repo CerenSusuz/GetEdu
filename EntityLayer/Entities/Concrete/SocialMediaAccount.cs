@@ -8,11 +8,8 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Entities.Concrete
 {
-    public class SocialMediaAccount : IEntity
+    public class SocialMediaAccount : BaseEntity
     {
-        public int Id { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
         public string Name { get; set; }
         public string Url { get; set; }
 

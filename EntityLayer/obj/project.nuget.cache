@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "tJQK6o9ApvOp8aalspu9cg1qgpEWHdlptyUKsxkHXaz0cqa/v67IzYMZ6GlDfSXuvpvYBYZDUV9GJ7Clj66bhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\c.susuz\\source\\repos\\getedu\\GetEdu\\EntityLayer\\EntityLayer.csproj",
+  "projectFilePath": "C:\\Users\\c.susuz\\Desktop\\GetEdu\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\c.susuz\\.nuget\\packages\\castle.core\\1.2.0\\castle.core.1.2.0.nupkg.sha512",
     "C:\\Users\\c.susuz\\.nuget\\packages\\castle.dynamicproxy\\2.2.0\\castle.dynamicproxy.2.2.0.nupkg.sha512",

@@ -1,4 +1,5 @@
 ﻿using BaseCore.Entities.Abstract;
+using BaseCore.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +8,8 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Entities.Concrete
 {
-    public class Image : IEntity
+    public class Image : BaseEntity
     {
-        public int Id { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
         public string Path { get; set; }
 
     }
