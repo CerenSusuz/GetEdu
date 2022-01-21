@@ -15,7 +15,6 @@ namespace EntityLayer.Entities.DTOs.BaseListDto
         public string CurriculumVitae { get; set; }
         public string WebSite { get; set; }
 
-
         public string Account { get; set; }
     }
 }
