@@ -14,6 +14,8 @@ namespace DataAccessLayer.Mapping
         public void Configure(EntityTypeBuilder<CourseStudentPairing> builder)
         {
             builder.HasIndex(cs => new { cs.CourseId, cs.StudentId }).IsUnique();
+            builder.Property(acc => acc.StudentId).IsRequired();
+            builder.Property(acc => acc.CourseId).IsRequired();
         }
     }
 }

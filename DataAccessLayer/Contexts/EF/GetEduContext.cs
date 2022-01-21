@@ -23,18 +23,23 @@ namespace DataAccessLayer.Contexts.EF
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=GetEduDb;Trusted_Connection=true;");
+                optionsBuilder.UseSqlServer(@"Server=ETR-LT167;Database=GetEduDb;Trusted_Connection=true;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
+            foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+            {
+                relationship.DeleteBehavior = DeleteBehavior.Restrict;
+            }
         }
 
         public DbSet<User> Users { get; set; }
         public DbSet<UserOperationClaimPairing> UserOperationClaimPairings { get; set; }
         public DbSet<OperationClaim> OperationClaims { get; set; }
+        public DbSet<Account> Accounts { get; set; }
         public DbSet<Content> Contents { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<CourseStudentPairing> CourseStudentPairings { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Entities.DTOs.BaseDtos
 {
-    public class SocialMedaAccountDto : IDto
+    public class SocialMediaAccountDto : IDto
     {
         public string Name { get; set; }
         public string Url { get; set; }

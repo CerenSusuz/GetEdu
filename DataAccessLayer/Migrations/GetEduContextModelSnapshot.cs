@@ -142,7 +142,7 @@ namespace DataAccessLayer.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("Account");
+                    b.ToTable("Accounts");
                 });
 
             modelBuilder.Entity("EntityLayer.Entities.Concrete.Content", b =>
@@ -155,6 +155,12 @@ namespace DataAccessLayer.Migrations
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("TotalLength")
                         .HasColumnType("datetime2");
@@ -233,6 +239,8 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("StudentId");
 
                     b.HasIndex("CourseId", "StudentId")
                         .IsUnique();
@@ -450,13 +458,13 @@ namespace DataAccessLayer.Migrations
                     b.HasOne("EntityLayer.Entities.Concrete.Image", "Image")
                         .WithMany()
                         .HasForeignKey("ImageId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BaseCore.Entities.Concrete.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Image");
@@ -469,7 +477,7 @@ namespace DataAccessLayer.Migrations
                     b.HasOne("EntityLayer.Entities.Concrete.Image", "Image")
                         .WithMany()
                         .HasForeignKey("ImageId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("EntityLayer.Entities.Concrete.Instructor", "Instructor")
@@ -483,12 +491,31 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Instructor");
                 });
 
+            modelBuilder.Entity("EntityLayer.Entities.Concrete.CourseStudentPairing", b =>
+                {
+                    b.HasOne("EntityLayer.Entities.Concrete.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Entities.Concrete.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("EntityLayer.Entities.Concrete.Instructor", b =>
                 {
                     b.HasOne("EntityLayer.Entities.Concrete.Account", "Account")
                         .WithMany()
                         .HasForeignKey("AccountId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Account");
@@ -499,7 +526,7 @@ namespace DataAccessLayer.Migrations
                     b.HasOne("EntityLayer.Entities.Concrete.Image", "Image")
                         .WithMany()
                         .HasForeignKey("ImageId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("EntityLayer.Entities.Concrete.Section", "Section")
@@ -540,7 +567,7 @@ namespace DataAccessLayer.Migrations
                     b.HasOne("EntityLayer.Entities.Concrete.Account", "Account")
                         .WithMany()
                         .HasForeignKey("AccountId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Account");

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class InitiaL : Migration
+    public partial class InitialDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,6 +15,8 @@ namespace DataAccessLayer.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     TotalLength = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
@@ -22,22 +24,6 @@ namespace DataAccessLayer.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Contents", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "CourseStudentPairings",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CourseId = table.Column<int>(type: "int", nullable: false),
-                    StudentId = table.Column<int>(type: "int", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_CourseStudentPairings", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -130,7 +116,7 @@ namespace DataAccessLayer.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Account",
+                name: "Accounts",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -142,19 +128,19 @@ namespace DataAccessLayer.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Account", x => x.Id);
+                    table.PrimaryKey("PK_Accounts", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Account_Images_ImageId",
+                        name: "FK_Accounts_Images_ImageId",
                         column: x => x.ImageId,
                         principalTable: "Images",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Account_Users_UserId",
+                        name: "FK_Accounts_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -179,7 +165,7 @@ namespace DataAccessLayer.Migrations
                         column: x => x.ImageId,
                         principalTable: "Images",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Lectures_Sections_SectionId",
                         column: x => x.SectionId,
@@ -206,11 +192,11 @@ namespace DataAccessLayer.Migrations
                 {
                     table.PrimaryKey("PK_Instructors", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Instructors_Account_AccountId",
+                        name: "FK_Instructors_Accounts_AccountId",
                         column: x => x.AccountId,
-                        principalTable: "Account",
+                        principalTable: "Accounts",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -227,11 +213,11 @@ namespace DataAccessLayer.Migrations
                 {
                     table.PrimaryKey("PK_Students", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Students_Account_AccountId",
+                        name: "FK_Students_Accounts_AccountId",
                         column: x => x.AccountId,
-                        principalTable: "Account",
+                        principalTable: "Accounts",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -257,7 +243,7 @@ namespace DataAccessLayer.Migrations
                         column: x => x.ImageId,
                         principalTable: "Images",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Courses_Instructors_InstructorId",
                         column: x => x.InstructorId,
@@ -289,14 +275,42 @@ namespace DataAccessLayer.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "CourseStudentPairings",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    StudentId = table.Column<int>(type: "int", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CourseStudentPairings", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CourseStudentPairings_Courses_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Courses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_CourseStudentPairings_Students_StudentId",
+                        column: x => x.StudentId,
+                        principalTable: "Students",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
-                name: "IX_Account_ImageId",
-                table: "Account",
+                name: "IX_Accounts_ImageId",
+                table: "Accounts",
                 column: "ImageId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Account_UserId",
-                table: "Account",
+                name: "IX_Accounts_UserId",
+                table: "Accounts",
                 column: "UserId",
                 unique: true);
 
@@ -315,6 +329,11 @@ namespace DataAccessLayer.Migrations
                 table: "CourseStudentPairings",
                 columns: new[] { "CourseId", "StudentId" },
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CourseStudentPairings_StudentId",
+                table: "CourseStudentPairings",
+                column: "StudentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Images_Path",
@@ -370,9 +389,6 @@ namespace DataAccessLayer.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Courses");
-
-            migrationBuilder.DropTable(
                 name: "CourseStudentPairings");
 
             migrationBuilder.DropTable(
@@ -385,10 +401,13 @@ namespace DataAccessLayer.Migrations
                 name: "SocialMediaAccounts");
 
             migrationBuilder.DropTable(
-                name: "Students");
+                name: "UserOperationClaimPairings");
 
             migrationBuilder.DropTable(
-                name: "UserOperationClaimPairings");
+                name: "Courses");
+
+            migrationBuilder.DropTable(
+                name: "Students");
 
             migrationBuilder.DropTable(
                 name: "Sections");
@@ -400,7 +419,7 @@ namespace DataAccessLayer.Migrations
                 name: "Contents");
 
             migrationBuilder.DropTable(
-                name: "Account");
+                name: "Accounts");
 
             migrationBuilder.DropTable(
                 name: "Images");

@@ -10,6 +10,8 @@ namespace EntityLayer.Entities.Concrete
 {
     public class Content : BaseEntity
     {
+        public string? Title { get; set; }
+        public string? Description { get; set; }
         public DateTime TotalLength { get; set; }
 
         //one content has many sections

@@ -1,16 +1,13 @@
-﻿using BaseCore.CrossCuttingConcerns.Caching;
-using BaseCore.Utilities.Interceptors;
-using BaseCore.Utilities.Tools;
-using Castle.Core.Interceptor;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using BaseCore.CrossCuttingConcerns.Caching;
+using BaseCore.Utilities.Interceptors;
+using BaseCore.Utilities.Tools;
+using Castle.DynamicProxy;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace BaseCore.Aspects.Caching
 {
