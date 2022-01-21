@@ -1,6 +1,6 @@
 ﻿using BaseCore.CrossCuttingConcerns.Validation.FluentValidation;
 using BaseCore.Utilities.Interceptors;
-using Castle.Core.Interceptor;
+using Castle.DynamicProxy;
 using FluentValidation;
 using System;
 using System.Collections.Generic;

@@ -121,9 +121,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Castle.DynamicProxy": {
+            "Autofac": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[6.3.0, )"
+            },
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "FluentValidation": {
               "target": "Package",

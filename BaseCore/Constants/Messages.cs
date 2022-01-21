@@ -8,7 +8,6 @@ namespace BaseCore.Constants
 {
     public static class Messages
     {
-        public static string NotEnough = "Score not enough";
         public static string MaintenanceTime = "System is under maintenance";
         public static string UserNotFound = "User not found";
         public static string PasswordError = "Wrong Password";

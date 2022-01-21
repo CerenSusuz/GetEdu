@@ -1,7 +1,7 @@
 ﻿using BaseCore.CrossCuttingConcerns.Caching;
 using BaseCore.Utilities.Interceptors;
 using BaseCore.Utilities.Tools;
-using Castle.Core.Interceptor;
+using Castle.DynamicProxy;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;

@@ -23,7 +23,7 @@ namespace DataAccessLayer.Contexts.EF
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=GetEduDb;Trusted_Connection=true;");
+                optionsBuilder.UseSqlServer(@"Server=ETR-LT167;Database=GetEduDb;Trusted_Connection=true;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
