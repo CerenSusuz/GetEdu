@@ -1,4 +1,7 @@
 ﻿using AutoMapper;
+using BaseCore.Entities.Concrete;
+using BaseCore.Entities.Concrete.Dtos.BaseDto;
+using BaseCore.Entities.Concrete.Dtos.ListDto;
 using EntityLayer.Entities.Concrete;
 using EntityLayer.Entities.DTOs.BaseDtos;
 using EntityLayer.Entities.DTOs.BaseListDto;
@@ -15,10 +18,27 @@ namespace EntityLayer.Entities.AutoMapper
                 name => name.MapFrom(user => user.User.FirstName + user.User.LastName))
                 .ForMember(account => account.Image,
                 path => path.MapFrom(image => image.Image.Path));
-
+            
+            CreateMap<Category, CategoryDto>().ReverseMap();
+            CreateMap<Category, CategoriesDto>()
+                .ForMember(category => category.ParentCategory,
+                name => name.MapFrom(category => category.ParentCategory.Name));
 
             CreateMap<Content, ContentDto>().ReverseMap();
             CreateMap<Content, ContentsDto>();
+
+            CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<User, UsersDto>();
+
+            CreateMap<OperationClaim, OperationClaimDto>().ReverseMap();
+            CreateMap<OperationClaim, OperationClaimsDto>();
+
+            CreateMap<UserOperationClaimPairing, UserOperationClaimPairingDto>().ReverseMap();
+            CreateMap<UserOperationClaimPairing, UserOperationClaimPairingsDto>()
+                .ForMember(claim => claim.OperationClaim,
+                name => name.MapFrom(claim => claim.OperationClaim.Name))
+                .ForMember(user => user.User,
+                name => name.MapFrom(student => student.User.FirstName + student.User.LastName));
 
 
             CreateMap<Course, CourseDto>().ReverseMap();

@@ -16,5 +16,7 @@ namespace EntityLayer.Entities.Concrete
 
         //one content has many sections
         public ICollection<Section> Sections { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }
