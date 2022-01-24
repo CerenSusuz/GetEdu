@@ -7,13 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="Concrete\" />
-    <Folder Include="ValidationRules\FluentValidation\" />
+    <PackageReference Include="Autofac" Version="6.3.0" />
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="6.3.0" />
+    <ProjectReference Include="..\BaseCore\BaseCore.csproj" />
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
   </ItemGroup>
 
 </Project>
