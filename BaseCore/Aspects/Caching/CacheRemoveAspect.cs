@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BaseCore.Aspects.Caching
 {
-    internal class CacheRemoveAspect : MethodInterception
+    public class CacheRemoveAspect : MethodInterception
     {
         private string _pattern;
         private ICacheManager _cacheManager;

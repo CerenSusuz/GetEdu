@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace BaseCore.Entities.Concrete
 {
-    public class OperationClaim : IEntity
+    public class OperationClaim : BaseEntity
     {
-        public int Id { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
         public string Name { get; set; }
     }
 }

@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace BaseCore.Entities.Concrete
 {
-    public class User : IEntity
+    public class User : BaseEntity
     {
-        public int Id { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
         public bool IsBlocked { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

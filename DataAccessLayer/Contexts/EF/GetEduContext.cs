@@ -40,6 +40,7 @@ namespace DataAccessLayer.Contexts.EF
         public DbSet<UserOperationClaimPairing> UserOperationClaimPairings { get; set; }
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public DbSet<Content> Contents { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<CourseStudentPairing> CourseStudentPairings { get; set; }

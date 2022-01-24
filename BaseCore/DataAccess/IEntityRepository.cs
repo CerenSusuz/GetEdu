@@ -27,6 +27,13 @@ namespace BaseCore.DataAccess.EntityFramework
         /// <param name="filter"></param>
         /// <returns></returns>
         Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> filter);
+        
+        /// <summary>
+        /// Gets the entities that is meets the given filter.
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
+        IQueryable<TEntity> GetAllAsync(Expression<Func<TEntity, bool>> filter);
 
         /// <summary>
         /// Inserts the entity to the database.

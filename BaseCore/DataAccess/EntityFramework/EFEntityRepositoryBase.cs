@@ -21,7 +21,6 @@ namespace BaseCore.DataAccess.EntityFramework
             }
         }
 
-
         public IQueryable<TEntity> AsNoTracking()
         {
             using (TContext context = new TContext())
@@ -94,6 +93,16 @@ namespace BaseCore.DataAccess.EntityFramework
                 updatedEntity.State = EntityState.Modified;
 
                 await context.SaveChangesAsync();
+            }
+        }
+
+        public IQueryable<TEntity> GetAllAsync(Expression<Func<TEntity, bool>> filter)
+        {
+            using (TContext context = new TContext())
+            {
+                return filter == null
+                                 ? context.Set<TEntity>()
+                                 : context.Set<TEntity>().Where(filter);
             }
         }
     }
