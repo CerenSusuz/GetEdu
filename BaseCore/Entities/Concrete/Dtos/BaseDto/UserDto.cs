@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseCore.Entities.Concrete
+namespace BaseCore.Entities.Concrete.Dtos.BaseDto
 {
-    public class User : BaseEntity
+    public class UserDto : IDto
     {
         public bool IsBlocked { get; set; }
         public string FirstName { get; set; }
@@ -16,6 +16,5 @@ namespace BaseCore.Entities.Concrete
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
         public bool Status { get; set; }
-
     }
 }

@@ -5,13 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseCore.Entities.Concrete
+namespace BaseCore.Entities.Concrete.Dtos.BaseDto
 {
-    public class UserOperationClaimPairing : BaseEntity
+    public class UserOperationClaimPairingDto : IDto
     {
         public int UserId { get; set; }
-        public User User { get; set; }
         public int OperationClaimId { get; set; }
-        public OperationClaim OperationClaim { get; set; }
     }
 }

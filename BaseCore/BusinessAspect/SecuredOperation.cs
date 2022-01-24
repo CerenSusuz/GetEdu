@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BaseCore.Constants;
 using Castle.DynamicProxy;
 
 namespace BaseCore.BusinessAspect
@@ -33,7 +32,7 @@ namespace BaseCore.BusinessAspect
                 {
                     return;
                 }
-                throw new Exception(Messages.AuthorizationDenied);
+                throw new Exception("AuthorizationDenied");
             }
         }
 

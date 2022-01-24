@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseCore.Entities.Concrete
+namespace BaseCore.Entities.Concrete.Dtos.BaseDto
 {
-    public class OperationClaim : BaseEntity
+    public class OperationClaimDto : IDto
     {
         public string Name { get; set; }
     }

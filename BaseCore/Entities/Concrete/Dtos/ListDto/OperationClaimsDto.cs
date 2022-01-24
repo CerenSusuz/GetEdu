@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseCore.Entities.Concrete
+namespace BaseCore.Entities.Concrete.Dtos.ListDto
 {
-    public class OperationClaim : BaseEntity
+    public class OperationClaimsDto : IListDto
     {
         public string Name { get; set; }
     }
