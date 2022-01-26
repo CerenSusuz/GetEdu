@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 namespace BaseCore.Models
 {
     public class PagedList<TDto>
-         where TDto : class, IListDto, new()
+        where TDto : class, IListDto, new()
     {
+
         public List<TDto> Data { get; set; }
         public int CurrentPage { get; set; }
         public int TotalPage { get; set; }
@@ -24,14 +25,12 @@ namespace BaseCore.Models
         }
 
 
-        public PagedList(List<TDto> data, int count, Filter filter)
+        public PagedList(List<TDto> data, int count)
         {
             TotalCount = count;
-            PageSize = filter.PageSize;
-            CurrentPage = filter.PageNumber;
-            TotalPage = (int)Math.Ceiling(count / (decimal)filter.PageSize);
             Data = data;
             LastCachedDate = DateTime.Now.ToString("dd.MM.yyyy hh:mm:ss");
         }
     }
 }
+

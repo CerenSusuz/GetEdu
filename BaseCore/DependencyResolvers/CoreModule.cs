@@ -10,17 +10,19 @@ using System.Text;
 
 namespace Core.DependencyResolvers
 {
+    /// <summary>
+    /// It involves IoC injections that are related with the Core layer.
+    /// It loads general dependencies for the project.
+    /// </summary>
     public class CoreModule : ICoreModule
     {
-        public void Load(IServiceCollection serviceCollection)
+        public void Load(IServiceCollection services)
         {
-            serviceCollection.AddMemoryCache();
-
-            serviceCollection.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            
-            serviceCollection.AddSingleton<ICacheManager, MemoryCacheManager>();
-            
-            serviceCollection.AddSingleton<Stopwatch>();
+            // Cache
+            services.AddMemoryCache();  // Microsoft's Cache
+            services.AddSingleton<ICacheManager, MemoryCacheManager>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSingleton<Stopwatch>(); // PerformanceAspect
         }
     }
 }

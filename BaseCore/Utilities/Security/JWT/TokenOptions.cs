@@ -4,6 +4,10 @@ using System.Text;
 
 namespace Core.Utilities.Security.JWT
 {
+    /// <summary>
+    /// Holds token standards. 
+    /// Has been created to map the TokenOptions that is located into the appsetting.json (configurations) in the WebApi layer.
+    /// </summary>
     public class TokenOptions
     {
         public string Audience { get; set; }

@@ -52,6 +52,5 @@ namespace DataAccessLayer.Contexts.EF
         public DbSet<Student> Students { get; set; }
 
 
-
     }
 }

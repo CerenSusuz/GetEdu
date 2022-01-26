@@ -1,12 +1,15 @@
 ﻿using AutoMapper;
-using BaseCore.DataAccess.EntityFramework;
+using BaseCore.Aspects.Caching;
 using BaseCore.Entities.Concrete;
 using BaseCore.Entities.Concrete.Dtos.BaseDto;
 using BaseCore.Entities.Concrete.Dtos.ListDto;
 using BaseCore.Extensions;
 using BaseCore.Models;
+using BaseCore.Utilities.Results.Abstract;
+using BaseCore.Utilities.Results.Concrete;
 using BusinessLayer.Abstract;
 using BusinessLayer.Repositories.Concrete;
+using DataAccessLayer.Repositories.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,11 +27,14 @@ namespace BusinessLayer.Concrete
             _repository = repository;
             _mapper = mapper;
         }
-        public async Task<PagedList<OperationClaimsDto>> GetAllAsync(Filter filter)
+
+        [CacheAspect]
+        public IDataResult<List<OperationClaimsDto>> GetAll()
         {
-            return await Task.Run(() => _repository.AsNoTracking()
-            .Filter(filter)
-            .ToPagedList<OperationClaim, OperationClaimsDto>(filter, _mapper));
+            var users = _repository.GetAll();
+            var entities = _mapper.Map<List<OperationClaimsDto>>(users);
+            return new SuccessDataResult<List<OperationClaimsDto>>(entities);
         }
+
     }
 }

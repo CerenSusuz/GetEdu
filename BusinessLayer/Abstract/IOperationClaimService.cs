@@ -1,18 +1,13 @@
 ﻿using BaseCore.Entities.Concrete;
 using BaseCore.Entities.Concrete.Dtos.BaseDto;
 using BaseCore.Entities.Concrete.Dtos.ListDto;
-using BaseCore.Models;
+using BaseCore.Utilities.Results.Abstract;
 using BusinessLayer.Repositories.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    public interface IOperationClaimService : IServiceRepository<OperationClaimDto>
+    public interface IOperationClaimService : IServiceRepository<OperationClaim,OperationClaimDto>
     {
-        Task<PagedList<OperationClaimsDto>> GetAllAsync(Filter filter);
+        IDataResult<List<OperationClaimsDto>> GetAll();
     }
 }
