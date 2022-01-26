@@ -10,10 +10,9 @@ namespace BaseCore.Utilities.Interceptors
         public IInterceptor[] SelectInterceptors(Type type, MethodInfo method, IInterceptor[] interceptors)
         {
             var classAttributes = type.GetCustomAttributes<MethodInterceptionBase>(true).ToList();
-            var mt = type.GetMethod(method.Name);
-            var mtAttributes = (mt ?? throw new InvalidOperationException()).GetCustomAttributes<MethodInterceptionBase>(true);
-            classAttributes.AddRange(mtAttributes);
-            return (IInterceptor[])classAttributes.OrderBy(x => x.Priority).ToArray();
+            var methodAttributes = type.GetMethod(method.Name).GetCustomAttributes<MethodInterceptionBase>(true);
+            classAttributes.AddRange(methodAttributes);
+            return classAttributes.OrderBy(x => x.Priority).ToArray();
         }
     }
 }

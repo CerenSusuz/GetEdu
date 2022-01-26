@@ -15,12 +15,10 @@ namespace BaseCore.Aspects.Caching
     {
         private string _pattern;
         private ICacheManager _cacheManager;
-        private readonly int _db;
 
-        public CacheRemoveAspect(string pattern = "", int db = 0)
+        public CacheRemoveAspect(string pattern)
         {
             _pattern = pattern;
-            _db = db;
             _cacheManager = ServiceTool.ServiceProvider.GetService<ICacheManager>();
         }
 
@@ -28,7 +26,7 @@ namespace BaseCore.Aspects.Caching
         {
             var key = _pattern == "" ? $"{invocation.InvocationTarget.GetType().Name.Replace("Service", "")}" : _pattern;
             if (invocation.Method.ReflectedType == null) return;
-            _cacheManager.RemoveByPatternAsync(_pattern);
+            _cacheManager.Remove(key);
         }
     }
 }

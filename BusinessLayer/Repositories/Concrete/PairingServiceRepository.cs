@@ -1,17 +1,20 @@
 ﻿using AutoMapper;
 using BaseCore.Aspects.Caching;
-using BaseCore.DataAccess.EntityFramework;
 using BaseCore.Entities.Abstract;
+using BaseCore.Utilities.Results.Abstract;
+using BaseCore.Utilities.Results.Concrete;
 using BusinessLayer.Repositories.Abstract;
+using DataAccessLayer.Repositories.Abstract;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BusinessLayer.Repositories.Concrete
 {
-    public class PairingServiceRepository<TEntity,TDto> : IPairingServiceRepository<TDto>
+    public class PairingServiceRepository<TEntity, TDto> : IPairingServiceRepository<TEntity,TDto>
         where TEntity : class, IEntity, new()
         where TDto : class, IDto, new()
     {
@@ -25,46 +28,27 @@ namespace BusinessLayer.Repositories.Concrete
         }
 
         [CacheAspect]
-        public virtual async Task<TDto> GetAsync(int id)
+        public IDataResult<TDto> GetById(int id)
         {
-            var entity = await _repository.GetAsync(entity => entity.Id == id);
-            return _mapper.Map<TDto>(entity);
-        }        
-        
-        public virtual async Task<TDto> GetAllAsync(int id)
-        {
-            var entity =  _repository.GetAllAsync(entity => entity.Id == id);
-            return _mapper.Map<TDto>(entity);
+            var entity = _repository.Get(entity => entity.Id == id);
+            var dto = _mapper.Map<TDto>(entity);
+            return new SuccessDataResult<TDto>(dto);
         }
 
+        [CacheRemoveAspect("")]
+        public IResult Delete(int id)
+        {
+            var entity = _repository.Get(entity=>entity.Id == id);
+            _repository.Delete(entity);
+            return new SuccessResult();
+        }
 
-        [CacheRemoveAspect]
-        public virtual async Task<int> InsertAsync(TDto dto)
+        [CacheRemoveAspect("")]
+        public IResult Insert(TDto dto)
         {
             var entity = _mapper.Map<TEntity>(dto);
-            await _repository.InsertAsync(entity);
-            return entity.Id;
-        }
-
-        [CacheRemoveAspect]
-        public virtual async Task DeleteAsync(int id)
-        {
-            var entity = await _repository.GetAsync(entity=>entity.Id == id);
-            await _repository.DeleteAsync(entity);
-        }
-
-        [CacheRemoveAspect]
-        public virtual async Task DeleteRangeAsync(List<int> listOfId)
-        {
-            var entities = await _repository.AsNoTracking().Where(x => listOfId.Contains(x.Id)).ToListAsync();
-
-            await _repository.DeleteRangeAsync(entities);
-        }
-
-        [CacheRemoveAspect]
-        public virtual async Task RemoveCacheAsync()
-        {
-            await Task.CompletedTask.ConfigureAwait(false);
+            _repository.Add(entity);
+            return new SuccessResult();
         }
     }
 }

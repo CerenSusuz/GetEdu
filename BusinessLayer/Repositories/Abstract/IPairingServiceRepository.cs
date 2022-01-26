@@ -1,4 +1,5 @@
 ﻿using BaseCore.Entities.Abstract;
+using BaseCore.Utilities.Results.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Repositories.Abstract
 {
-    public interface IPairingServiceRepository<TDto>
+    public interface IPairingServiceRepository<TEntity,TDto>
         where TDto : class,IDto,new()
     {
         /// <summary>
@@ -15,40 +16,21 @@ namespace BusinessLayer.Repositories.Abstract
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        Task<TDto> GetAsync(int id);
-        
-        /// <summary>
-        /// Get Model  by Id
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        Task<TDto> GetAllAsync(int id);
+        IDataResult<TDto> GetById(int id);
 
         /// <summary>
         /// Insert Entity
         /// </summary>
         /// <param name="dto"></param>
         /// <returns></returns>
-       Task<int> InsertAsync(TDto dto);
+        IResult Insert(TDto dto);
 
         /// <summary>
         /// Delete Entity By Id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-       Task DeleteAsync(int id);
+        IResult Delete(int id);
 
-        /// <summary>
-        /// Delete Entity By List of id
-        /// </summary>
-        /// <param name="listOfId"></param>
-        /// <returns></returns>
-        Task DeleteRangeAsync(List<int> listOfId);
-
-        /// <summary>
-        ///     Remove Cache
-        /// </summary>
-        /// <returns></returns>
-        Task RemoveCacheAsync();
     }
 }

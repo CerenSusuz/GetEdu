@@ -3,14 +3,15 @@ using BaseCore.Entities.Concrete;
 using BaseCore.Entities.Concrete.Dtos.BaseDto;
 using BaseCore.Entities.Concrete.Dtos.ListDto;
 using EntityLayer.Entities.Concrete;
+using EntityLayer.Entities.DTOs.BaseDto.UserDto;
 using EntityLayer.Entities.DTOs.BaseDtos;
 using EntityLayer.Entities.DTOs.BaseListDto;
 
 namespace EntityLayer.Entities.AutoMapper
 {
-    public class AutoMapper : Profile
+    public class AutoMapperProfile : Profile
     {
-        public AutoMapper()
+        public AutoMapperProfile()
         {
             CreateMap<Account, AccountDto>().ReverseMap();
             CreateMap<Account, AccountsDto>()
@@ -29,6 +30,8 @@ namespace EntityLayer.Entities.AutoMapper
 
             CreateMap<User, UserDto>().ReverseMap();
             CreateMap<User, UsersDto>();
+
+            CreateMap<RegisterDto, UserDto>().ReverseMap();
 
             CreateMap<OperationClaim, OperationClaimDto>().ReverseMap();
             CreateMap<OperationClaim, OperationClaimsDto>();

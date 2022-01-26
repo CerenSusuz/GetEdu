@@ -1,20 +1,17 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Text;
-using AutoMapper;
+﻿using AutoMapper;
 using BaseCore.Aspects.Caching;
 using BaseCore.Aspects.Validation;
-using BaseCore.DataAccess.EntityFramework;
 using BaseCore.Entities.Concrete;
 using BaseCore.Entities.Concrete.Dtos.BaseDto;
 using BaseCore.Entities.Concrete.Dtos.ListDto;
-using BaseCore.Extensions;
-using BaseCore.Models;
+using BaseCore.Utilities.Results.Abstract;
+using BaseCore.Utilities.Results.Concrete;
 using BaseCore.Utilities.Security.Hashing;
 using BusinessLayer.Abstract;
+using BusinessLayer.Aspects;
 using BusinessLayer.Repositories.Concrete;
 using BusinessLayer.ValidationRules.FluentValidation;
+using DataAccessLayer.Contexts.EF;
 using DataAccessLayer.Repositories.Abstract;
 using EntityLayer.Entities.DTOs.BaseDto.UserDto;
 
@@ -36,8 +33,8 @@ namespace BusinessLayer.Concrete
             _userDAL = userDAL;
         }
 
-        [CacheAspect]
-        public async Task EditProfile(EditDto user)
+        [CacheRemoveAspect("IUserService.EditProfile")]
+        public IResult EditProfile(EditDto user)
         {
             byte[] passwordHash;
             byte[] passwordSalt;
@@ -52,32 +49,45 @@ namespace BusinessLayer.Concrete
                 Email = user.Email,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
-                Status = true
+                Status = true,
+                IsBlocked = true
             };
 
-            await _repository.UpdateAsync(userInfo);
+            _repository.Update(userInfo);
+            return new SuccessResult();
+        }
+
+
+        [CacheAspect]
+        [SecuredOperation("admin")]
+        public IDataResult<List<UsersDto>> GetAll()
+        {
+            var users = _repository.GetAll();
+            var entities = _mapper.Map<List<UsersDto>> (users);
+            return new SuccessDataResult<List<UsersDto>>(entities);
+        }
+
+
+        [CacheAspect]
+        public IDataResult<User> GetByMail(string email)
+        {
+            var entity = _repository.Get(user => user.Email == email);
+            return new SuccessDataResult<User>(entity);
         }
 
         [CacheAspect]
-        public async Task<PagedList<UsersDto>> GetAllAsync(Filter filter)
+        public IDataResult<List<OperationClaim>>? GetClaims(User user)
         {
-            return await Task.Run(() => _repository.AsNoTracking()
-            .Filter(filter)
-            .ToPagedList<User, UsersDto>(filter, _mapper));
+            var result = _userDAL.Get(u => u.Id == user.Id);
+            if (result != null)
+            {
+                var claims = _userDAL.GetClaims(user);
+                return new SuccessDataResult<List<OperationClaim>>(claims);
+            }
+            return null;
+           
         }
 
-        [CacheAspect]
-        public async Task<UserDto> GetByMail(string email)
-        {
-            var entity = await Task.Run(() => 
-            _repository.GetAsync(user => user.Email == email));
-            return _mapper.Map<UserDto>(entity);
-        }
-
-        public List<OperationClaim> GetClaims(User user)
-        {
-            return _userDAL.GetClaims(user);
-        }
     }
 }
 

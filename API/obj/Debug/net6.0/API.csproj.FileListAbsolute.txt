@@ -107,3 +107,7 @@ C:\Users\c.susuz\Desktop\GetEdu\API\bin\Debug\net6.0\runtimes\win-x64\native\sni
 C:\Users\c.susuz\Desktop\GetEdu\API\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
 C:\Users\c.susuz\Desktop\GetEdu\API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\c.susuz\Desktop\GetEdu\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\c.susuz\Desktop\GetEdu\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\c.susuz\Desktop\GetEdu\API\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\c.susuz\Desktop\GetEdu\API\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\c.susuz\Desktop\GetEdu\API\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll

@@ -112,6 +112,10 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("OperationClaimId");
+
+                    b.HasIndex("UserId");
+
                     b.ToTable("UserOperationClaimPairings");
                 });
 
@@ -145,6 +149,38 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Accounts");
                 });
 
+            modelBuilder.Entity("EntityLayer.Entities.Concrete.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int?>("ParentCategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.HasIndex("ParentCategoryId");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("EntityLayer.Entities.Concrete.Content", b =>
                 {
                     b.Property<int>("Id")
@@ -152,6 +188,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -169,6 +208,8 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Contents");
                 });
@@ -453,6 +494,25 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Students");
                 });
 
+            modelBuilder.Entity("BaseCore.Entities.Concrete.UserOperationClaimPairing", b =>
+                {
+                    b.HasOne("BaseCore.Entities.Concrete.OperationClaim", "OperationClaim")
+                        .WithMany()
+                        .HasForeignKey("OperationClaimId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("BaseCore.Entities.Concrete.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("OperationClaim");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("EntityLayer.Entities.Concrete.Account", b =>
                 {
                     b.HasOne("EntityLayer.Entities.Concrete.Image", "Image")
@@ -470,6 +530,27 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Image");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EntityLayer.Entities.Concrete.Category", b =>
+                {
+                    b.HasOne("EntityLayer.Entities.Concrete.Category", "ParentCategory")
+                        .WithMany()
+                        .HasForeignKey("ParentCategoryId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("ParentCategory");
+                });
+
+            modelBuilder.Entity("EntityLayer.Entities.Concrete.Content", b =>
+                {
+                    b.HasOne("EntityLayer.Entities.Concrete.Category", "Category")
+                        .WithMany("Contents")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("EntityLayer.Entities.Concrete.Course", b =>
@@ -571,6 +652,11 @@ namespace DataAccessLayer.Migrations
                         .IsRequired();
 
                     b.Navigation("Account");
+                });
+
+            modelBuilder.Entity("EntityLayer.Entities.Concrete.Category", b =>
+                {
+                    b.Navigation("Contents");
                 });
 
             modelBuilder.Entity("EntityLayer.Entities.Concrete.Content", b =>
